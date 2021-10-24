@@ -84,54 +84,9 @@
     <style>
       .underline{width:60%;height:10px;-webkit-transition:background-image 0.5s linear;transition:background-image 0.5s linear;background-image:url("./assets/img/underline.svg");background-repeat:repeat-x;background-size:auto;position:relative;}
     </style>
-      <style>
-        @media print {
-    
-          *,
-          ::after,
-          ::before {
-            text-shadow: none !important;
-            box-shadow: none !important;
-          }
-    
-          a:not(.btn) {
-            text-decoration: underline;
-          }
-    
-          h2,
-          p {
-            orphans: 3;
-            widows: 3;
-          }
-    
-          h2 {
-            page-break-after: avoid;
-          }
-        }
-    
+      <style>    
         /*! CSS Used from: https://www.iadvize.com/en/wp-content/themes/iAdvizeV3/library/css/HP-2020-ALPHA/menu-tmp-alpha.css?v=1634882038 */
-        p,
-        h2 {
-          margin: 0;
-          padding: 0;
-        }
-    
-        h2 {
-          font-size: 100%;
-          font-weight: normal;
-        }
-    
-        *,
-        *:before,
-        *:after {
-          box-sizing: inherit;
-        }
-    
-        section {
-          width: 100%;
-        }
-    
-        section .inner {
+        .business > .inner {
           width: 120rem;
           margin: 0px auto;
           -moz-transition: width 0.5s linear;
@@ -141,26 +96,26 @@
         }
     
         @media only screen and (max-width:1366px) {
-          section .inner {
+          .business > .inner {
             width: 83rem;
           }
         }
     
         @media only screen and (max-width:1024px) {
-          section .inner {
+          .business > .inner {
             width: 54.5rem;
           }
         }
     
         @media only screen and (max-width:768px) {
-          section .inner {
+          .business > .inner {
             width: 28.5rem;
           }
         }
     
         /*! CSS Used from: https://www.iadvize.com/en/wp-content/themes/iAdvizeV3/library/css/style-default.css ; media=all */
         @media all {
-          p {
+          .business > p {
             -webkit-font-feature-settings: "liga", "dlig";
             -moz-font-feature-settings: "liga=1, dlig=1";
             -ms-font-feature-settings: "liga", "dlig";
@@ -168,32 +123,32 @@
             font-feature-settings: "liga", "dlig";
           }
     
-          a,
-          a:visited {
+          .business > a,
+          .business > a:visited {
             color: #0099ff;
             text-decoration: none;
           }
     
-          a:hover,
-          a:focus,
-          a:visited:hover,
-          a:visited:focus {
+          .business > a:hover,
+          .business > a:focus,
+          .business > a:visited:hover,
+          .business > a:visited:focus {
             color: #007dd1;
           }
     
-          a:link,
-          a:visited:link {
+          .business > a:link,
+          .business > a:visited:link {
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
           }
     
-          h2 {
+          .business > h2 {
             text-rendering: optimizelegibility;
             font-weight: 500;
             color: #26282d;
             font-family: "kozuka-mincho-pro", "proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
           }
     
-          h2 {
+          .business > h2 {
             font-size: 28px;
             line-height: 1.333em;
             font-weight: bold;
@@ -203,30 +158,24 @@
     
         /*! CSS Used from: https://www.iadvize.com/en/wp-content/themes/iAdvizeV3/library/css/style.css?v2 ; media=all */
         @media all {
-          section {
+          .business >  {
             display: block;
           }
     
-          a {
+          .business > a {
             background: transparent;
           }
     
-          a:focus {
+          .business > a:focus {
             outline: none;
           }
     
-          a:active,
-          a:hover {
+          .business > a:active,
+          .business > a:hover {
             outline: 0;
           }
     
-          * {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-          }
-    
-          p {
+          .business > p {
             -webkit-font-feature-settings: "liga", "dlig";
             -moz-font-feature-settings: "liga=1, dlig=1";
             -ms-font-feature-settings: "liga", "dlig";
@@ -234,159 +183,42 @@
             font-feature-settings: "liga", "dlig";
           }
     
-          a,
-          a:visited {
+          .business > a,
+          .business > a:visited {
             color: #0099ff;
             text-decoration: none;
           }
     
-          a:hover,
-          a:focus,
-          a:visited:hover,
-          a:visited:focus {
-            color: #007dd1;
-          }
-    
-          a:link,
-          a:visited:link {
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
-          }
-    
-          h2 {
-            text-rendering: optimizelegibility;
-            font-weight: 500;
-            color: #26282d;
-            font-family: "kozuka-mincho-pro", "proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
-          }
-    
-          h2 {
+          .business > h2 {
             font-size: 28px;
             line-height: 1.333em;
             font-weight: bold;
             margin-bottom: 0.375em;
           }
-    
-          @media print {
-            * {
-              background: transparent !important;
-              color: black !important;
-              text-shadow: none !important;
-              filter: none !important;
-              -ms-filter: none !important;
-            }
-    
-            a,
-            a:visited {
-              color: #444 !important;
-              text-decoration: underline;
-            }
-    
-            a:after,
-            a:visited:after {
-              content: " ("attr(href) ")";
-            }
-    
-            p,
-            h2 {
-              orphans: 3;
-              widows: 3;
-            }
-    
-            h2 {
-              page-break-after: avoid;
-            }
-          }
         }
     
-        /*! CSS Used from: https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css */
-        *,
-        ::after,
-        ::before {
-          box-sizing: border-box;
-        }
-    
-        h2 {
-          margin-top: 0;
-          margin-bottom: .5rem;
-          font-weight: 500;
-          line-height: 1.2;
-        }
-    
-        h2 {
-          font-size: calc(1.325rem + .9vw);
-        }
     
         @media (min-width:1200px) {
-          h2 {
+          .business > h2 {
             font-size: 2rem;
           }
         }
     
-        p {
+        .business > p {
           margin-top: 0;
           margin-bottom: 1rem;
         }
     
-        a {
+        .business > a {
           color: #0d6efd;
           text-decoration: underline;
         }
     
-        a:hover {
+        .business > a:hover {
           color: #0a58ca;
         }
     
-        ::-moz-focus-inner {
-          padding: 0;
-          border-style: none;
-        }
-    
-        /*! CSS Used from: https://unpkg.com/aos@2.3.1/dist/aos.css */
-        body[data-aos-duration="400"] [data-aos] {
-          transition-duration: .4s;
-        }
-    
-        body[data-aos-easing=ease] [data-aos] {
-          transition-timing-function: ease;
-        }
-    
-        [data-aos^=fade][data-aos^=fade] {
-          opacity: 0;
-          transition-property: opacity, transform;
-        }
-    
-        [data-aos^=fade][data-aos^=fade].aos-animate {
-          opacity: 1;
-          transform: translateZ(0);
-        }
-    
-        [data-aos=fade-left] {
-          transform: translate3d(100px, 0, 0);
-        }
-    
-        /*! CSS Used from: https://www.iadvize.com/en/wp-content/themes/iAdvizeV3/library/css/MEP-2021/hp-2021.css?v=1634882038 */
-        p,
-        h2 {
-          margin: 0;
-          padding: 0;
-        }
-    
-        h2 {
-          font-size: 100%;
-          font-weight: normal;
-        }
-    
-        *,
-        *:before,
-        *:after {
-          box-sizing: inherit;
-        }
-    
-        section {
-          width: 100%;
-        }
-    
-        section .inner {
+        .business > .inner {
           width: 1248px;
           margin: 0px auto;
           -moz-transition: width 0.5s linear;
@@ -396,25 +228,25 @@
         }
     
         @media only screen and (max-width:1366px) {
-          section .inner {
+          .business > .inner {
             width: 1008px;
           }
         }
     
         @media only screen and (max-width:1024px) {
-          section .inner {
+          .business > .inner {
             width: 750px;
           }
         }
     
         @media only screen and (max-width:768px) {
-          section .inner {
+          .business > .inner {
             width: 435px;
           }
         }
     
         @media only screen and (max-width:380px) {
-          section .inner {
+          .business > .inner {
             width: 100%;
           }
         }
@@ -423,7 +255,7 @@
           width: 100%;
         }
     
-        section .inner {
+        .business > .inner {
           width: 1248px;
           margin: 0px auto;
           -moz-transition: width 0.5s linear;
@@ -433,26 +265,26 @@
         }
     
         @media only screen and (max-width:1366px) {
-          section .inner {
+          .business > .inner {
             width: 1008px;
           }
         }
     
         @media only screen and (max-width:1024px) {
-          section .inner {
+          .business > .inner {
             width: 750px;
           }
         }
     
         @media only screen and (max-width:768px) {
-          section .inner {
+          .business > .inner {
             width: 100%;
             padding: 0px 10px;
           }
         }
     
         @media only screen and (max-width:380px) {
-          section .inner {
+          .business > .inner {
             width: 100%;
           }
         }
@@ -520,87 +352,44 @@
           color: white;
         }
     
-        ::-webkit-scrollbar-track {
-          background-color: #F5F5F5;
-        }
-    
-        ::-webkit-scrollbar {
-          height: 6px;
-          background-color: #F5F5F5;
-        }
-    
-        ::-webkit-scrollbar-thumb {
-          background-color: #C4C6CE;
-          border-radius: 3px;
-        }
-    
-        .business {
-          padding-top: 120px;
-          padding-bottom: 55px;
-        }
-    
-        @media only screen and (max-width:1366px) {
-          .business {
-            padding: 95px 0px;
-          }
-        }
-    
-        @media only screen and (max-width:1024px) {
-          .business {
-            padding: 95px 0px;
-          }
-        }
-    
-        @media only screen and (max-width:768px) {
-          .business {
-            padding: 70px 0px;
-          }
-        }
-    
-        @media only screen and (max-width:380px) {
-          .business {
-            padding: 55px 0px;
-          }
-        }
-    
-        .business .inner {
+        .business > .inner {
           display: flex;
           align-items: center;
           justify-content: space-between;
         }
     
         @media only screen and (max-width:1366px) {
-          .business .inner {
+          .business > .inner {
             flex-direction: column;
           }
         }
     
-        .business .inner .left {
+        .business > .inner .left {
           max-width: 564px;
         }
     
         @media only screen and (max-width:1366px) {
-          .business .inner .left {
+          .business > .inner .left {
             text-align: center;
             max-width: 100%;
           }
         }
     
         @media only screen and (max-width:768px) {
-          .business .inner .left {
+          .business > .inner .left {
             margin-bottom: 30px;
           }
         }
     
-        .business .inner .left h2 {
+        .business > .inner .left h2 {
           margin-bottom: 24px;
         }
     
-        .business .inner .left p {
+        .business > .inner .left p {
           margin-bottom: 16px;
         }
     
-        .business .inner .left .line {
+        .business > .inner .left .line {
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -608,18 +397,18 @@
         }
     
         @media only screen and (max-width:1366px) {
-          .business .inner .left .line {
+          .business > .inner .left .line {
             justify-content: center;
           }
         }
     
         @media only screen and (max-width:768px) {
-          .business .inner .left .line {
+          .business > .inner .left .line {
             flex-direction: column;
           }
         }
     
-        .business .inner .left .line .item {
+        .business > .inner .left .line .item {
           border: 1px solid #C4C6CE;
           box-sizing: border-box;
           border-radius: 8px;
@@ -638,35 +427,35 @@
         }
     
         @media only screen and (max-width:1366px) {
-          .business .inner .left .line .item {
+          .business > .inner .left .line .item {
             margin: 0px 10px;
           }
         }
     
         @media only screen and (max-width:768px) {
-          .business .inner .left .line .item {
+          .business > .inner .left .line .item {
             width: 70%;
             height: 70px;
             margin: 10px 0px;
           }
         }
     
-        .business .inner .left .line .item:hover {
+        .business > .inner .left .line .item:hover {
           border: 1px solid #34393F;
         }
     
-        .business .inner .left a {
+        .business > .inner .left a {
           background: #1BC74E;
           display: inline-block;
         }
     
         @media only screen and (max-width:1366px) {
-          .business .inner .left a {
+          .business > .inner .left a {
             margin-bottom: 24px;
           }
         }
     
-        .business .inner .right {
+        .business > .inner .right {
           width: 612px;
           height: 612px;
           background-position: center;
@@ -677,7 +466,7 @@
           position: relative;
         }
     
-        .business .inner .right .below {
+        .business > .inner .right .below {
           position: absolute;
           top: 0px;
           left: 0px;
@@ -690,14 +479,14 @@
         }
     
         @media only screen and (max-width:1024px) {
-          .business .inner .right {
+          .business > .inner .right {
             width: 400px;
             height: 400px;
           }
         }
     
         @media only screen and (max-width:768px) {
-          .business .inner .right {
+          .business > .inner .right {
             width: 300px;
             height: 300px;
           }
