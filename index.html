@@ -1582,20 +1582,27 @@
     </section>
 
   <!-- MTM Section -->
+  <script type="text/javascript">
+    function f1(color,p1,p2) {
+      document.getElementById("1_0").style.backgroundColor=color; 
+      document.getElementById("1__1").style.backgroundImage = "url('"+p1+"')"; 
+      document.getElementById("video-mtm").setAttribute("src", p2);
+    }
+  </script>
     <section class="mtm">
-      <section style="padding: 0px;"
+      <section id="1__1" style="padding: 0px;"
         class="interlude interlude-mtm"
         style="
           background-image: url('https://info.iadvize.com/hubfs/HP%20-%202021/Group%201022%20(2).svg');
         "
       ></section>
-      <div class="max" style="background-color: rgb(27, 199, 78)">
+      <div class="max" id="1_0" style="background-color: rgb(27, 199, 78)">
         <div class="inner">
           <h3 class="titleSection">More than messaging.</h3>
           <div class="content content-step-alpha">
             <div class="left">
               <video id="video-mtm" playsinline="" autoplay="" muted="" loop="">
-                <source
+                <source id="1__2"
                   src="https://info.iadvize.com/hubfs/HP%20-%202021/HP%20-%20OmnichanelCompressed%20-%2027-05-21.mp4"
                   type="video/mp4"
                 />
@@ -1610,6 +1617,8 @@
                     <button
                       class="accordion-button"
                       type="button"
+                      id="1_1"
+                      onclick="f1('rgb(27, 199, 78)','https://info.iadvize.com/hubfs/HP%20-%202021/Group%201022%20(2).svg','https://info.iadvize.com/hubfs/HP%20-%202021/HP%20-%20OmnichanelCompressed%20-%2027-05-21.mp4')"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOneMtm"
                       aria-expanded="true"
@@ -1643,6 +1652,8 @@
                   <h2 class="accordion-header" id="headingTwoMtm">
                     <button
                       class="accordion-button collapsed"
+                      id="1_2"
+                      onclick="f1('rgb(0, 153, 255)','https://info.iadvize.com/hubfs/HP%20-%202021/Group%201121.svg','https://info.iadvize.com/hubfs/HP%20-%202021/HP%20-%20AnthenticityCompressed%20-%2027-05-21%20(1).mp4')"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseTwoMtm"
@@ -1677,6 +1688,8 @@
                   <h2 class="accordion-header" id="headingThreeMtm">
                     <button
                       class="accordion-button collapsed"
+                      id="1_3"
+                      onclick="f1('rgb(255, 205, 64)','https://info.iadvize.com/hubfs/HP%20-%202021/Group%201120.svg','https://info.iadvize.com/hubfs/HP%20-%202021/HP%20-%20Scalability%20-%20Final%20Fond%20Jaune.mp4')"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseThreeMtm"
