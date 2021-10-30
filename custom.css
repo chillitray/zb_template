@@ -222,7 +222,7 @@ section {
 }
 
 .titleSection span {
-  color: #1bc74e;
+  color: #4154f1;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -372,7 +372,7 @@ section {
 }
 
 .business > .inner .left a {
-  background: #1bc74e;
+  background: #4154f1;
   display: inline-block;
 }
 
