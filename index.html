@@ -69,7 +69,7 @@
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
             <li><a class="nav-link scrollto" href="#features">Advantage</a></li>
-            <li><a class="nav-link scrollto" href="#feture-tabs">Use Cases</a></li>
+            <li><a class="nav-link scrollto" href="#usecases">Use Cases</a></li>
             <li><a class="nav-link scrollto" href="#team">Team</a></li>
             <!--  <li><a href="blog.html">Blog</a></li>
         <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -90,7 +90,7 @@
             </ul>
           </li> -->
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            <li><a class="getstarted scrollto" href="#about">Book Demo</a></li>
+            <li><a class="getstarted scrollto" data-toggle="modal" data-target="#form">Book Demo</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -116,7 +116,8 @@
             <div data-aos="fade-up" data-aos-delay="600">
               <div class="text-center text-lg-start">
                 <a
-                  href="#about"
+                  data-toggle="modal" 
+                  data-target="#form"
                   class="
                     btn-get-started
                     scrollto
@@ -143,7 +144,6 @@
       </div>
     </section>
     <!-- End Hero -->
-
     <main id="main">
       <!-- ======= About Section ======= -->
  <!--     <section id="about" class="about">
@@ -204,23 +204,23 @@
           Place messaging at the heart of your business<span>.</span>
         </h2>
 
-        <p class="legend">
+        <p id="legend_1" class="legend">
           Our teams can help you deploy a quality conversational strategy that
           is cost-effective, managed and tailored to meet your objectives :
         </p>
 
         <div class="line">
-          <div class="item" id="item-improve">
+          <div onclick="document.getElementById('item-illu').style.backgroundImage = 'url(assets/img/waves_svgs/blue.svg)'; document.getElementById('legend_1').innerHTML = 'abcefdjkgfndjnfj';" class="item" id="item-improve">
             Deliver the best customer experience
           </div>
-          <div class="item" id="item-ca">Increase your revenue</div>
-          <div class="item" id="item-cost">Optimize your costs</div>
+          <div onclick="document.getElementById('item-illu').style.backgroundImage = 'url(assets/img/waves_svgs/golden.svg)'; document.getElementById('legend_1').innerHTML = 'sfdsfd';"  class="item" id="item-ca">Increase your revenue</div>
+          <div onclick="document.getElementById('item-illu').style.backgroundImage = 'url(assets/img/waves_svgs/green.svg)'; document.getElementById('legend_1').innerHTML = 'dfsdfsd';" class="item" id="item-cost">Optimize your costs</div>
         </div>
 
         <a
           class="cta"
           style="color: white !important"
-          href="https://www.iadvize.com/en/customers/"
+          href="#"
           >Read what our clients have to say</a
         >
       </div>
@@ -228,7 +228,7 @@
         class="right"
         id="item-illu"
         style="
-          background-image: url('https://info.iadvize.com/hubfs/HP%20-%202021/Automation.png');
+          background-image: url('assets/img/waves_svgs/dashboard.webp');
         "
       >
         <div class="below" style="background-image: none"></div>
@@ -250,18 +250,18 @@
     <section id="1__1" style="padding: 0px;"
       class="interlude interlude-mtm"
       style="
-        background-image: url('https://info.iadvize.com/hubfs/HP%20-%202021/Group%201022%20(2).svg');
+        background-image: url('assets/img/waves_svgs/blue.svg');
       "
     ></section>
     <!-- Write a JS to automatically scroll through colors-->
-    <div class="max" id="1_0" style="background-color: rgb(27, 199, 78)">
+    <div class="max" id="1_0" style="background-color: rgb(0, 153, 255)">
       <div class="inner">
         <h3 class="titleSection">More than messaging.</h3>
         <div class="content content-step-alpha">
           <div class="left">
             <video id="video-mtm" playsinline="" autoplay="" muted="" loop="">
               <source id="1__2"
-                src="assets/img/team/1.mp4"
+                src="assets/img/team/2.mp4"
                 type="video/mp4"
               />
 
@@ -276,7 +276,7 @@
                     class="accordion-button"
                     type="button"
                     id="1_1"
-                    onclick="f1('rgb(27, 199, 78)','https://info.iadvize.com/hubfs/HP%20-%202021/Group%201022%20(2).svg','assets/img/team/2.mp4')"
+                    onclick="f1('rgb(27, 199, 78)','assets/img/waves_svgs/green.svg','assets/img/team/1.mp4')"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseOneMtm"
                     aria-expanded="true"
@@ -292,7 +292,7 @@
                 </h2>
                 <div
                   id="collapseOneMtm"
-                  class="accordion-collapse collapse show"
+                  class="accordion-collapse collapse"
                   aria-labelledby="headingOneMtm"
                   data-bs-parent="#accordionExampleMtm"
                   style=""
@@ -311,7 +311,7 @@
                   <button
                     class="accordion-button collapsed"
                     id="1_2"
-                    onclick="f1('rgb(0, 153, 255)','https://info.iadvize.com/hubfs/HP%20-%202021/Group%201121.svg','assets/img/team/3.mp4')"
+                    onclick="f1('rgb(0, 153, 255)','assets/img/waves_svgs/blue.svg','assets/img/team/2.mp4')"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseTwoMtm"
@@ -328,7 +328,7 @@
                 </h2>
                 <div
                   id="collapseTwoMtm"
-                  class="accordion-collapse collapse"
+                  class="accordion-collapse collapse show"
                   aria-labelledby="headingTwoMtm"
                   data-bs-parent="#accordionExampleMtm"
                   style=""
@@ -347,7 +347,7 @@
                   <button
                     class="accordion-button collapsed"
                     id="1_3"
-                    onclick="f1('rgb(255, 205, 64)','https://info.iadvize.com/hubfs/HP%20-%202021/Group%201120.svg','https://info.iadvize.com/hubfs/HP%20-%202021/HP%20-%20Scalability%20-%20Final%20Fond%20Jaune.mp4')"
+                    onclick="f1('rgb(255, 205, 64)','assets/img/waves_svgs/golden.svg','assets/img/team/3.mp4')"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseThreeMtm"
@@ -379,7 +379,7 @@
             </div>
 
             <a
-              href="https://www.iadvize.com/us/platform-tour/"
+              href="#contact"
               class="cta"
               id="link"
               style="color: white"
@@ -578,46 +578,31 @@
               <!-- Tabs -->
               <ul class="nav nav-pills mb-3">
                 <li>
-                  <a class="nav-link active" data-bs-toggle="pill" href="#tab1"
+                  <a onclick="document.getElementById('img_alt').setAttribute('src','assets/img/features-2.png')" class="nav-link active" data-bs-toggle="pill" href="#tab1"
                     >Banking</a
                   >
                 </li>
                 <li>
-                  <a class="nav-link" data-bs-toggle="pill" href="#tab2"
+                  <a onclick="document.getElementById('img_alt').setAttribute('src','assets/img/features-3.png')" class="nav-link" data-bs-toggle="pill" href="#tab2"
                     >E-Commerce</a
                   >
                 </li>
                 <li>
-                  <a class="nav-link" data-bs-toggle="pill" href="#tab3"
+                  <a onclick="document.getElementById('img_alt').setAttribute('src','assets/img/hero-img.png')" class="nav-link" data-bs-toggle="pill" href="#tab3"
                     >Real Estate</a
                   >
                 </li>
                 <li>
-                  <a class="nav-link" data-bs-toggle="pill" href="#tab4"
+                  <a onclick="document.getElementById('img_alt').setAttribute('src','assets/img/hero-img1.png')" class="nav-link" data-bs-toggle="pill" href="#tab4"
                     >More</a
                   >
                 </li>
-        <!--        <li>
-                  <a class="nav-link" data-bs-toggle="pill" href="#tab3"
-                    >Governance</a
-                  >
-                </li>
-                <li>
-                  <a class="nav-link" data-bs-toggle="pill" href="#tab3"
-                    >Finance & Retail</a
-                  >
-                </li>
-                <li>
-                  <a class="nav-link" data-bs-toggle="pill" href="#tab3"
-                    >More</a
-                  >
-                </li>
-              </ul>   -->
+              </ul>   
               <!-- End Tabs -->
 
               <!-- Tab Content -->
               <div class="tab-content">
-                <div class="tab-pane fade show active" id="tab1">
+                <div  class="tab-pane fade show active" id="tab1">
                   <p>
                     Conversational AI is on rise for Banking, offering an array of solutions. Right from, payment and account info utilities,
                     to faq and support bots in automation.  Bots can automate tasks and fulfill customer needs day and night, and do so faster and with less friction.
@@ -673,18 +658,18 @@
 
                 <div class="tab-pane fade show" id="tab3">
                   <p>
-                    Consequuntur inventore voluptates consequatur aut vel et.
+                    dfdsfConsequuntur inventore voluptates consequatur aut vel et.
                     Eos doloribus expedita. Sapiente atque consequatur minima
                     nihil quae aspernatur quo suscipit voluptatem.
                   </p>
                   <div class="d-flex align-items-center mb-2">
                     <i class="bi bi-check2"></i>
                     <h4>
-                      Repudiandae rerum velit modi et officia quasi facilis
+                     sfdf Repudiandae rerum velit modi et officia quasi facilis
                     </h4>
                   </div>
                   <p>
-                    Laborum omnis voluptates voluptas qui sit aliquam
+                    sdff Laborum omnis voluptates voluptas qui sit aliquam
                     blanditiis. Sapiente minima commodi dolorum non eveniet
                     magni quaerat nemo et.
                   </p>
@@ -693,7 +678,7 @@
                     <h4>Incidunt non veritatis illum ea ut nisi</h4>
                   </div>
                   <p>
-                    Non quod totam minus repellendus autem sint velit. Rerum
+                    fs fsNon quod totam minus repellendus autem sint velit. Rerum
                     debitis facere soluta tenetur. Iure molestiae assumenda sunt
                     qui inventore eligendi voluptates nisi at. Dolorem quo
                     tempora. Quia et perferendis.
@@ -703,14 +688,14 @@
 
                 <div class="tab-pane fade show" id="tab4">
                   <p>
-                    Consequuntur inventore voluptates consequatur aut vel et.
+                     sfdfs fConsequuntur inventore voluptates consequatur aut vel et.
                     Eos doloribus expedita. Sapiente atque consequatur minima
                     nihil quae aspernatur quo suscipit voluptatem.
                   </p>
                   <div class="d-flex align-items-center mb-2">
                     <i class="bi bi-check2"></i>
                     <h4>
-                      Repudiandae rerum velit modi et officia quasi facilis
+                     sfsdf sdf Repudiandae rerum velit modi et officia quasi facilis
                     </h4>
                   </div>
                   <p>
@@ -720,10 +705,10 @@
                   </p>
                   <div class="d-flex align-items-center mb-2">
                     <i class="bi bi-check2"></i>
-                    <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                    <h4>sf sdf Incidunt non veritatis illum ea ut nisi</h4>
                   </div>
                   <p>
-                    Non quod totam minus repellendus autem sint velit. Rerum
+                    fs fsfd sdf Non quod totam minus repellendus autem sint velit. Rerum
                     debitis facere soluta tenetur. Iure molestiae assumenda sunt
                     qui inventore eligendi voluptates nisi at. Dolorem quo
                     tempora. Quia et perferendis.
@@ -734,7 +719,7 @@
             </div>
 
             <div class="col-lg-6">
-              <img src="assets/img/features-2.png" class="img-fluid" alt="" />
+              <img id='img_alt' src="assets/img/features-2.png" class="img-fluid" alt="AI Image" />
             </div>
           </div>
           <!-- End Feature Tabs -->
@@ -1893,6 +1878,45 @@
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
+    <!-- MODAL FORM -->
+    <section class="modalForm">
+      <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <h5 class="modal-title" id="exampleModalLabel">Please Fill Up The Form</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form>
+              <div class="modal-body">
+                 <div class="form-group">
+                  <label for="name1">Name</label>
+                  <input required ="" type="text" class="form-control" id="name1" placeholder="Company / Your Name">
+                </div>
+                <div class="form-group">
+                  <label for="email1">Email</label>
+                  <input required ="" type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small>
+                </div>
+                <div class="form-group">
+                  <label for="phone1">Phone</label>
+                  <input required ="" type="phone" class="form-control" id="phone1" placeholder="Phone">
+                </div>
+                 <div class="form-group">
+                  <label for="comments1">Additional Comments</label>
+                  <textarea id="comments" class="form-control" id="comments1" placeholder="Optional"></textarea>
+                </div>
+              </div>
+              <div class="modal-footer border-top-0 d-flex justify-content-center">
+                <button type="submit" style='background-color:#ff3c65' class="btn btn-success">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
@@ -1904,5 +1928,10 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    
+    <!-- Modal Form - Button Tap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
   </body>
 </html>
