@@ -90,7 +90,7 @@
             </ul>
           </li> -->
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            <li><a class="getstarted scrollto" data-toggle="modal" data-target="#form">Book Demo</a></li>
+            <li><a class="getstarted scrollto" data-toggle="modal" data-target="" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zuboid?primary_color=ff3c65'});return false;">Book Demo</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -117,7 +117,7 @@
               <div class="text-center text-lg-start">
                 <a
                   data-toggle="modal" 
-                  data-target="#form"
+                  data-target=""
                   class="
                     btn-get-started
                     scrollto
@@ -127,11 +127,21 @@
                     align-self-center
                   "
                 >
-                  <span>Get a Demo</span>
+                <!-- Calendly link widget begin -->
+                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                  <span href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zuboid?primary_color=ff3c65'});return false;">Get a Demo</span>
+                 <!-- Calendly link widget end -->
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
+            
+
+
+
+
+
           </div>
           <div
             class="col-lg-6 hero-img"
