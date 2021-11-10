@@ -244,8 +244,7 @@ section {
   line-height: 25px;
   letter-spacing: 0.02em;
   color: #707689;
-  font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 @media only screen and (max-width: 380px) {
@@ -343,8 +342,7 @@ section {
   color: #34393f;
   text-align: center;
   letter-spacing: 0.02em;
-  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "Nunito", sans-serif;
   width: 168px;
   height: 123px;
   display: flex;
@@ -562,14 +560,14 @@ button::-moz-focus-inner{border:0;padding:0;}
 @media only screen and (max-width:380px){
 .mtm .inner{width:100%;}
 }
-.titleSection{font-size:52px;line-height:60px;color:#34393F;font-family:"Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;font-weight:800;}
+.titleSection{font-size:52px;line-height:60px;color:#34393F;font-family:"Nunito", sans-serif;font-weight:800;}
 @media only screen and (max-width:1024px){
 .titleSection{font-size:48px;line-height:55px;}
 }
 @media only screen and (max-width:380px){
 .titleSection{font-size:36px;line-height:41px;}
 }
-.cta{font-size:18px;line-height:25px;color:#FFFFFF;font-family:"proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;text-decoration:none!important;padding:16px 40px;border-radius:8px;}
+.cta{font-size:18px;line-height:25px;color:#FFFFFF;font-family:"Nunito", sans-serif;text-decoration:none!important;padding:16px 40px;border-radius:8px;}
 @media only screen and (max-width:380px){
 .cta{font-size:16px;line-height:22px;padding:16px 10px;}
 }
